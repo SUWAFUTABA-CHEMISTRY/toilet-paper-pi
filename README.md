@@ -1,4 +1,5 @@
-# toilet-paper-pi ―トイレットペーパーを使って円周率を導く方法
-
-# Our goal
-We create the new way to derive a solution about pi. We may use the toilet paper every day. And, the idea came to me: We can use it to derive the pi.  
+# トイレットペーパーを使って円周率を求めよう！
+## 背景
+　円周率を求める方法って色々あるけど，それらどの方法も複雑で分かりにくいよねってことで今回考案しました。初等数学の知識があれば誰でも理解できるように，ということでね。
+## 展望
+　これから，より精密なトイレットペーパーをコンピュータ上で再現することに挑戦していきたいと思っています。
