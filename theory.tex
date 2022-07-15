@@ -1,0 +1,37 @@
+\documentclass[a4j]{jarticle}
+\usepackage{amsmath, amssymb}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage[margin=10mm]{geometry}
+\usepackage{float}
+\usepackage{multicol}
+\numberwithin{equation}{section}
+\title{トイレットペーパーを用いた円周率の求め方に関する考察}
+\author{部長 \thanks{諏訪二葉高校化学部(SFCC)}}
+\begin{document}
+\maketitle
+\section{Intruduction}
+　円周率の計算方法を考えていた時に思いついたのでここに記す。
+\section{Methods}
+　 紙が$N$枚巻かれているトイレットペーパー1ロールを考える。ここで紙の厚さを$\{r_n\}(n=2, 3, 4, \cdots)$で表す。また芯の半径を$r_1$とする。ここで$n$周目に1周，紙を巻いた時，その紙の長さを$l_n$とする。この時，$l_n$は以下の式で表される。
+\begin{equation*}
+l_n = 2 \pi \left(\sum^n_k r_k\right)
+\end{equation*}
+ここで$\{l_n\}$の階差数列$\{l'_n\}$の漸化式を考えると，その式は以下のようになる。
+\begin{equation*}
+l'_n = l_{n+1} - l_n (n=1, 2, \cdots N-1)
+\end{equation*}
+また$l_n$の定義を思い出すと，以下のようにも表される。
+\begin{equation*}
+l'_n = 2\pi\left\{\sum^{n+1}_{k_1} r_{k_1} -  \sum^{n}_{k_2} r_{k_2} \right\} = 2\pi r_{n+1}
+\end{equation*}
+　従って，円周率$\pi$は以下の式で表される。
+\begin{equation*}
+\pi = \frac{l_{n+1} - l_n}{2r_{n+1}}
+\end{equation*}
+　精度を上げるため，この式をトイレットペーパー全体に適用する。それを考慮して，以下のような式を定める。
+\begin{equation*}
+\pi = \frac{1}{N} \sum^N_n \frac{l_{n+1} - l_n}{2r_{n+1}}
+\end{equation*}
+\section{Discussion}
+　この方法は，$l$の値と$r$の値を計測さえすれば円周率が計算できるものとなっている。検証は後ほど行うものとする。
+\end{document}
